@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penggunaan fieldset, legend, datalist, output, option, optgroup</title>
+</head>
+<body>
+    <form>
+        <!--FIELDSET DAN LEGEND-->
+        <fieldset>
+          <legend>Jenis Kelamin</legend>
+          <input type="radio" id="laki" name="gender" value="laki-laki">
+          <label for="laki">Laki-laki</label><br>
+          <input type="radio" id="perempuan" name="gender" value="perempuan">
+          <label for="perempuan">Perempuan</label><br><br>
+        </fieldset>
+        <br><br>
+        
+        <!--DATALIST DAN OPTION-->
+        <label for="buah">Pilih Buah:</label>
+        <input list="pilihan_buah" id="buah" name="buah">
+        
+        <datalist id="pilihan_buah">
+            <option value="Manggis">
+            <option value="Belimbing">
+            <option value="Kiwi">
+            <option value="Pisang">
+            <option value="Mangga">
+        </datalist>
+        <br><br>
+
+        <!--OPTGROUP-->
+        <select>
+            <optgroup label="Buah-buahan">
+              <option value="manggis">Manggis</option>
+              <option value="pisang">Pisang</option>
+              <option value="belimbing">Belimbing</option>
+            </optgroup>
+            <optgroup label="Sayuran">
+              <option value="carrot">Wortel</option>
+              <option value="broccoli">Brokoli</option>
+              <option value="spinach">Bayam</option>
+            </optgroup>
+        </select>
+        <br><br>       
+
+    </form>
+
+
+    <!--OUTPUT-->
+    <form oninput="hasil.value = parseInt(angka1.value) + parseInt(angka2.value)">
+        <label for="angka1">Angka 1:</label>
+        <input type="number" id="angka1" name="angka1"><br><br>
+        
+        <label for="angka2">Angka 2:</label>
+        <input type="number" id="angka2" name="angka2"><br><br>
+        
+        <label for="hasil">Hasil:</label>
+        <output name="hasil" for="angka1 angka2"></output>
+    </form>
+      
+</body>
+</html>
