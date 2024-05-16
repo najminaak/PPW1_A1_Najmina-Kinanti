@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Penulisan Javascript dengan embed -->
+<!-- Penggunaan console.log, alert, document.write, innerHTML -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World Javascript</title>
+    
+    <!-- Penulisan javascriptdi tag head -->
+    <script> 
+        // console.log("Halo dari head")
+    </script>
+</head>
+
+<body>
+    <h1>Tutorial javascript pemula</h1>
+    <div id="hasil-output"></div>
+
+    <script>
+        console.log("Halo dari body"); //untuk menampilkan pesan di console
+       
+        function tambah(a,b) {
+            return a + b;
+        }
+        console.log(tambah(5,3));
+        x = "ppw";
+        console.log(x);
+
+        document.write("Hello World! ini doc write"); //untuk menulis ke dokumen html
+        document.write("<h1>ini doc write diberi tag h1</h1>");
+        document.write("<hr>"); //memberi garis
+        document.write("<p>ini doc write diberi tag p</p>");
+        document.write("ini doc write <b>diberi tag bold</b>");
+        document.write("<br>") //memberi enter baris
+
+        alert("Saya sedang belajar javascript"); //muncul jadi jendela dialog
+
+        function sayHello(){
+            alert("fungsi sayHello")
+        }
+
+
+        var hasil = document.getElementById("hasil-output");
+        hasil.innerHTML = "<p>aku dari inner HTML</p>";
+    </script>
+    
+    <button onclick="sayHello()">ini button dengan function</button>
+</body>
+
+
+<!-- Penulisan javascript inline -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World Javascript</title>
+</head>
+
+<body>
+    <h1>Tutorial javascript pemula</h1>
+    <a href="#" onclick="alert('Yey!')">klik aku!</a>
+    <a href="javascript:alert('Yey!!!!')">klik aku juga!</a>
+</body>
+
+
+
+<!-- Penulisan javascript eksternal -->
+<head>
+    <Title>Hello World Javascript</Title>
+</head>
+
+<body>
+    <p>Tutor javascript eksternal</p>
+    <script src="javascript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tugas Praktikum No 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto:wght@100&display=swap');</style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="textlogo">ABCD Community</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Kesempatan tidak selalu datang dua kali...  </h3>
+                <div class="texthero">
+                    Mari Bergabung Bersama Saya
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="formhero">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h1>Sign Up</h1>
+                            <form id="loginForm" role="form">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1"><h4>Email address</h4></label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1"><h4>Password</h4></label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword2"><h4>Ulangi Password</h4></label>
+                                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                            </form>
+                            <div id="errorMessages" class="text-danger" style="margin-top: 10px; font-size: 12px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+            <h3>&copy; antiantianti</h3>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            var password = document.getElementById('exampleInputPassword1').value;
+            var repeatPassword = document.getElementById('exampleInputPassword2').value;
+            var errorMessages = document.getElementById('errorMessages');
+
+            console.log('Validasi form dijalankan');
+            console.log('Password:', password);
+            console.log('Ulangi Password:', repeatPassword);
+
+            if (password.length < 8) {
+                alert('Password harus minimal 8 karakter'); 
+                errorMessages.innerHTML = 'Password harus minimal 8 karakter.';               
+                console.log('Password kurang dari 8 karakter');
+                event.preventDefault();
+            } else if (password !== repeatPassword) {
+                alert('Password dan Ulangi Password tidak cocok');
+                errorMessages.innerHTML = 'Password dan Ulangi Password tidak cocok.';
+                console.log('Password dan Ulangi Password tidak cocok');
+                event.preventDefault();
+            }
+        });
+        document.write("<div class='advertisement' style='font-size: 18px;'>Pasang Iklan Hubungi 0812 6543 0987</div>");
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

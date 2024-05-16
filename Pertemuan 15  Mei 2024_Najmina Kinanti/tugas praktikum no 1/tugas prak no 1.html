@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum No 1</title>
+</head>
+
+<body>
+    <h1>Embed Javascript</h1>
+    <script>
+        function embedAlert() {
+            alert('Menggunakan alert dengan embed JS')
+        }
+    </script>
+    <a href="#" onclick="embedAlert(); return false;">alert embed js</a>
+
+    <h1>Inline Javascript</h1> 
+    <a href="javascript:alert('Menggunakan alert dengan inline JS')">alert inline js</a>
+
+    <h1>Eksternal Javascript</h1>
+    <a href="#" id="alertLink">alert eksternal js</a>
+    <script src="js.js"></script>
+</body>
+</html>
