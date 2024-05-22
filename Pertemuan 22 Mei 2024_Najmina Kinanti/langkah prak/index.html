@@ -1,0 +1,258 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Variabel dalam Javascript</title>
+    <script>
+        //membuat variabel
+        var name = "Instagram";
+        var visitorCount = 50322;
+        var isActive = true;
+        var url = "https://instagram.com";
+
+        //menampilkan variabel ke jendela dialog
+        alert("Selamat datang di " + name);
+
+        //menampilkan variabel ke dalam HTML
+        document.write("Nama Situs: " + name + "<br>");
+        document.write("Jumlah Pengunjung: " + visitorCount + "<br>");
+        document.write("Status Aktif: " + isActive + "<br>");
+        document.write("Alamat URL: " + url + "<br>");
+    </script>
+</head>
+<body> </body>
+</html> -->
+
+
+
+<!-- <html>
+    <head>
+        <ttle>Dialog alert</ttle>
+    </head>
+    <body>
+        <script>
+            alert("Selamat datang")
+        </script>
+    </body>
+</html> -->
+
+
+
+
+
+<!-- <html>
+    <head>
+        <ttle>Dialog Confirm</ttle>
+    </head>
+    <body>
+        <script>
+            var yakin = confirm("Apakah kamu yakin akan mengunjungi instagram?");
+
+            if (yakin) {
+                window.location = "https://instagram.com";
+            } else {
+                document.write("Baiklah, tetap disini saja ya :)");
+            }
+        </script>
+    </body>
+</html> -->
+
+
+
+
+
+<!-- <html>
+    <head>
+        <ttle>Dialog Prompt</ttle>
+    </head>
+    <body>
+        <script>
+            var nama = prompt("Siapa nama kamu?", "");
+            document.write("<p>Hello " + nama + "</p>");
+        </script>
+    </body>
+</html> -->
+
+
+
+<!-- <html>
+    <head>
+        <ttle>Operator Penugasan</ttle>
+    </head>
+    <body>
+        <script>
+            document.write("Mula-mulai nilai score...<br>");
+            // pengisian nilai
+            var score = 100;
+            document.write("score = " + score + "<br/>");
+            
+            // pengisian dan menjumlahkan dengan 5
+            score += 5;
+            document.write("score = " + score + "<br/>");
+
+            // pengisian dan mengurangkan dengan 2
+            score -= 2;
+            document.write("score = " + score + "<br/>");
+
+            // pengisian dan perkalian dengan 2
+            score *= 2;
+            document.write("score = " + score + "<br/>");
+
+            // pengisian dan pembagian dengan 4
+            score /= 4;
+            document.write("score = " + score + "<br/>");
+
+            // pengisian dan pemangkatan dengan 2
+            score **= 2;
+            document.write("score = " + score + "<br/>");
+
+            // pengisian dan modulo dengan 3
+            score %= 3;
+            document.write("score = " + score + "<br/>");
+        </script>
+    </body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Operator Perbandingan</title>
+</head>
+
+<body>
+
+    <script>
+        var aku = 20;
+        var kamu = 19;
+
+        // sama dengan
+        var hasil = aku == kamu;
+        document.write(`${aku} == ${kamu} = ${hasil}<br/>`);
+        
+        // lebih besar
+        var hasil = aku > kamu;
+        document.write(`${aku} > ${kamu} = ${hasil}<br/>`);
+        
+        // lebih besar sama dengan
+        var hasil = aku >= kamu;
+        document.write(`${aku} >= ${kamu} = ${hasil}<br/>`);
+        
+        // lebih kecil
+        var hasil = aku < kamu;
+        document.write(`${aku} < ${kamu} = ${hasil}<br/>`);
+        
+        // lebih kecil sama dengan
+        var hasil = aku <= kamu;
+        document.write(`${aku} <= ${kamu} = ${hasil}<br/>`);
+        
+        // tidak sama dengan
+        var hasil = aku != kamu;
+        document.write(`${aku} != ${kamu} = ${hasil}<br/>`);
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Operator Logika</title>
+</head>
+
+<body>
+
+    <script>
+        var aku = 20;
+        var kamu = 19;
+
+        var benar = aku > kamu;
+        var salah = aku < kamu;
+
+        // operator && (and)
+        var hasil = benar && salah;
+        document.write(`${benar} && ${salah} = ${hasil}<br/>`);
+        
+        // operator || (or)
+        var hasil = benar || salah;
+        document.write(`${benar} || ${salah} = ${hasil}<br/>`);
+        
+        // operator ! (not)
+        var hasil = !benar
+        document.write(`!${benar} = ${hasil}<br/>`);
+
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Operator Bitwise</title>
+</head>
+
+<body>
+    <script>
+        var x = 4;
+        var y = 3;
+
+        // operator bitwise and
+        var hasil = x & y;
+        document.write(`${x} & ${y} = ${hasil}<br/>`);
+
+        // operator bitwise or
+        var hasil = x | y;
+        document.write(`${x} | ${y} = ${hasil}<br/>`);
+
+        // operator bitwise xor
+        var hasil = x ^ y;
+        document.write(`${x} ^ ${y} = ${hasil}<br/>`);
+
+        // operator negasi
+        var hasil = ~x;
+        document.write(`~${x} = ${hasil}<br/>`);
+        
+        // operator bitwise right shift >>
+        var hasil = x >> y;
+        document.write(`${x} >> ${y} = ${hasil}<br/>`);
+
+        // operator bitwise right shift <<
+        var hasil = x << y;
+        document.write(`${x} << ${y} = ${hasil}<br/>`);
+
+        // operator bitwise right shift (unsigned) >>>
+        var hasil = x >>> y;
+        document.write(`${x} >>> ${y} = ${hasil}<br/>`);
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Operator Ternary</title>
+</head>
+<body>
+    <script>
+        var pertanyaan = confirm("Apakah kamu berumur di atas 18 tahun?")
+
+        var hasil = pertanyaan ? "Selamat datang" : "Kamu tidak boleh di sini";
+        document.write(hasil);
+    </script>
+</body>
+</html> -->
